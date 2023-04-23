@@ -1,0 +1,96 @@
+@media (max-width:428px){
+    footer .container{
+          justify-content: flex-start;
+    }
+    }
+
+
+@media (max-width:768px){
+        nav ul{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            height: 100vh;
+            top: 0;
+            background: #359495;
+            width: 100vw;
+            transform: translateX(-100pc);
+            transition: .3s;
+        }
+        nav ul li a{
+            color: white;
+        }
+
+        nav ul li input{
+            width: auto;
+        }
+
+        nav ul li{
+            margin-left: 0;
+        }
+
+        nav ul{
+            margin-left: 0;
+        }
+
+        .nav-btn{
+            display: flex;
+            z-index: 1;
+        }
+
+        .ham,.close{
+            margin: .5pc;
+        }
+
+        .close{
+            display: none;
+        }
+
+        nav ul li button {
+            width: auto;
+            background-color: #ffffff;
+            color: #359495;
+            border: none;
+            cursor: pointer;
+            transition: .3s;
+            padding: .2pc;
+        }
+
+        .main-btn{
+            flex-direction: column;
+            gap: 1pc;
+        }
+
+        .main-btn .btn,
+        .main-btn .btn-1{
+            width: 30vw;
+        }
+
+        .card-flex{
+            flex-direction: column;
+        }
+
+        .card-img img{
+            height: auto;
+            width: 80vw;
+        }
+
+        .c-btn{
+        border: 2px solid #ffffff;
+        background:white;
+        margin-top: 2pc;
+        display: grid;
+        place-items: center;
+        width: 30vw;
+        transition: .3s;
+    }
+ 
+
+    }
+
+@media(max-width:500px){
+    .card-container{
+        margin:2pc;
+    }
+}

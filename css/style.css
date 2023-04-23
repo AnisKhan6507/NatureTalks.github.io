@@ -1,0 +1,196 @@
+
+/* MAIN----------------------------------*/
+.main{
+    padding-top: 1pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-position-x: center;
+    background-image:linear-gradient(rgba(255,255,255,.5),rgb(255 255 255 / 22%)), url("/img/bg.jpg");
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    font-family: var(--montserrat);
+    font-weight: 900;
+}
+
+.main-para{
+    /* width: 50vw; */
+    text-align: center;
+    margin-top: 2pc;
+    color: #ffffff;
+    font-family: var(--poppins);
+}
+
+.main-btn{
+    margin-top: 2pc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2pc;
+}
+
+.main-btn .btn{
+    text-align: center;
+    min-width: 12.5vw;
+    padding: .7pc;
+    border: 1.5px solid white;
+    color: white;
+    background-color: rgba(255,255,255,.1);
+    font-family: var(--poppins);
+    transition: .3s;
+}
+
+.main-btn .btn:hover,
+.main-btn .btn-1:hover{
+background-color: #359495;
+border: 1.5px solid #359495;
+cursor: pointer;
+}
+
+.main-btn .btn-1:hover{
+    color:#ffffff;
+}
+
+.main-btn .btn-1{
+    text-align: center;
+    min-width: 12.5vw;
+    padding: .7pc;
+    border: 1.5px solid white;
+    color: green;
+    background: #ffffff;
+    font-family: var(--poppins);
+    transition: .3s;
+}
+
+/* card----------------------------------*/
+.card-container{
+    margin: 5pc;
+}
+.card-img img{
+    width: 35vw;
+    height: 22pc;
+}
+
+.card-flex{
+    margin-top: 3pc;
+    display: flex;
+    gap: 2pc;
+    align-items: center;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+.card-content h1{
+    letter-spacing: 1px;
+    color:#359495;
+    font-family: var(--poppins);
+}
+
+.card-content p{
+    font-size: clamp(.2rem,10vw,1rem);
+    font-family: var(--poppins);
+}
+
+.blog-btn{
+    border:.2pc solid #359495;
+    width: max-content;
+    padding:.4pc 3pc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.blog-btn:hover{
+    background-color: #359495;
+}
+
+.blog-btn:hover a{
+    color: #ffffff;
+}
+
+.blog-btn a{
+    color: #359495;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: var(--poppins);
+}
+
+.btn-bottom{
+    margin-top: 5pc;
+}
+
+.btn-bottom .blog-btn{
+    text-align: center;
+}
+
+/* Contact part---------------------------------------------------------------------------- */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    background-image:linear-gradient(rgba(255,255,255,.5),rgb(255 255 255 / 22%)), url("/img/contact.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position-x: center;
+}
+
+.c-content h1{
+    font-size: 2rem;
+    font-family: var(--poppins);
+    color: white;
+    text-shadow: 0 0 2px black;
+    text-align: center;
+}
+
+.c-content p{
+    font-family: var(--poppins);
+    color: white;
+    text-shadow: 0 0 2px black;
+    text-align: center;
+}
+
+.c-btn{
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background:white;
+    margin-top: 2pc;
+    display: grid;
+    place-items: center;
+    min-width: 15vw;
+    transition: .3s;
+}
+
+.c-btn a{
+    padding: 1pc;
+    color: gray;
+    text-decoration: none;
+    font-family: var(--montserrat);
+    transition: .3s;
+}
+
+.c-btn:hover{
+    background: #359495;
+    border: 2px solid #359495;
+}
+
+.c-btn:hover a{
+    color: white;
+}
+
+/* footer-------------------------------- */

@@ -1,0 +1,113 @@
+
+footer{
+    background: rgb(43, 42, 42);
+}
+
+footer .container{
+    padding:2pc;
+}
+
+.container{
+    line-height: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    gap: 5pc;
+    flex-wrap: wrap;
+}
+
+.basic-info img{
+    width: 10pc;
+}
+
+.basic-info h1,
+.basic-info p,
+.message h1,
+.f-contact h3,
+.f-contact h1{
+    font-family: var(--poppins);
+    color: #ffffff;
+}
+
+.links ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: var(--poppins);
+    transition: .3s;
+}
+
+.links ul li:not(:nth-child(1))::after{
+    content: '';
+    display: block;
+    height: .1pc;
+    width: 0;
+    background: white;
+    transition: .3s;
+}
+
+.links ul li:hover:not(:nth-child(1))::after{
+    width: 2.5pc;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.links ul li h2{
+    color: #ffffff;
+    font-family: var(--poppins);
+    font-size: 2rem;
+}
+
+.message-input{
+    display: flex;
+    align-items: center;
+}
+
+.message input{
+    height: 5.1vh;
+}
+
+.message .btn{
+    cursor: pointer;
+    height: 5.1vh;
+    color: white;
+    background: #359495;
+    transition: .3s;
+}
+
+.message .btn:hover{
+    background: white;
+}
+
+.message .btn:hover a{
+    color: #359495;
+}
+
+.message .btn a{
+    padding: .1pc .4pc;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.bottom-footer{
+    font-family: var(--montserrat);
+    width: 100vw;
+    background-color: black;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+    font-weight: 300;
+}
+
+.bottom-footer h3{
+    padding: 2pc;
+}

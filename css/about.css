@@ -1,0 +1,135 @@
+.bg-container{
+    background-image: linear-gradient(180deg,rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.425)),url('/img/cardimg-2.jpg');
+    width: 100vw;
+    height: 40vh;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    display:grid;
+    place-items: center;
+}
+
+.bg-container h1{
+    color: white;
+    font-size: 3rem;
+    font-family: var(--montserrat);
+}
+
+
+
+.content{
+    margin:5pc 0;
+    display:flex;
+    justify-content: center;
+    gap: 2pc;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.content img{
+    height: 40vh;
+}
+
+.img-container{
+    background: #359495;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.content h1{
+    font-family: var(--poppins);
+    font-weight: 900;
+    font-size: clamp(2rem,10vw,4rem);
+}
+
+.content p{
+    font-family: var(--poppins);
+    font-size: 1rem;
+}
+
+.content .btn{
+    margin-top: 2pc;
+    background: transparent;
+    border: 3px solid #359495;
+    width: max-content;
+    transition: .3s;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.btn a{
+    transition: .3s;
+    color: #359495;
+    padding: .5pc;
+    text-decoration: none;
+    font-family: var(--poppins);
+}
+
+.btn:hover{
+    background: #359495;
+}
+
+.btn:hover a{
+    color: #ffffff;
+}
+
+
+
+
+/* .team-info{
+    margin: 5pc;
+} */
+
+.team-info h1{
+    font-size: clamp(2rem,10vw,4rem);
+    text-align: center;
+    font-family: var(--poppins);
+    margin-bottom: 5pc;
+    color: #359495;
+}
+
+.card{
+    background-color: #359495;
+    padding: 2pc;
+/* background-attachment: fixed; */
+}
+
+.card .inside{
+    display: flex;
+    justify-content: center;
+    gap: 2pc;
+    flex-wrap: wrap;
+}
+
+.card img{
+    width: 20pc;
+}
+
+.card-content h2{
+    font-size: 3rem;
+    color: white;
+    font-family: var(--poppins);
+    font-weight: medium;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.card-content p{
+    color: white;
+    align-self: center;
+    font-family: var(--roboto);
+    font-size:1.2rem;
+}
+
+.card-img{
+    background: white;
+    border-radius: 50pc;
+    overflow: hidden;
+}

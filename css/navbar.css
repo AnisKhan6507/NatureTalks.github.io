@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root{
+  --montserrat: 'Montserrat', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+}
+
+/* navbar-------------------------------------------------- */
+
+
+.nav-btn{
+    display: none;
+}
+
+.ham img,
+.close img{
+    width: 23px;
+}
+
+.logo{
+    display: grid;
+    place-items: center;
+}
+
+.logo img{
+    cursor: pointer;
+    width:7pc;
+    margin-left: 1pc;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8pc;
+   position: absolute;
+   right: 1pc;
+   z-index: -1;
+   cursor: pointer;
+}
+
+.icons i{
+    width:2pc;
+    height: 2pc;
+}
+
+
+.icons img:hover{
+   transform: scale(.9);
+}
+nav{
+    position: absolute;
+    top: .8pc;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #359495; */
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 2pc;
+    padding: .5pc;
+    border-radius: 2pc;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+nav ul li:not(:nth-child(5)):hover{
+    background-color: #359495;
+}
+
+nav ul li:not(:nth-child(5)):hover a{
+    color: white;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--poppins);
+    transition: .3s;
+}
+
+nav ul li input{
+    height: 5vh;
+    width: 20vw;
+    border-radius: 2pc;
+}
+
+nav ul li button{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 2pc;
+    background-color: #359495;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav ul li button:hover{
+ /* transform: scale(.9); */
+ box-shadow: 0 0 4px 2px #226566;
+ /* border: 1px solid white; */
+}
